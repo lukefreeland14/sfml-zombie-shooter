@@ -1,3 +1,6 @@
+![Gameplay Demo](Desktop/zombieGame-gif.gif)
+
+
 # 2D Zombie Shooter (C++ / SFML)
 
 A 2D zombie shooter built in C++ using SFML.
