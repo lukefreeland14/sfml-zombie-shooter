@@ -1,5 +1,5 @@
 #Gameplay Demo
-![Gameplay Demo](Desktop/zombieGame-gif.gif)
+![Gameplay Demo](zombieGame-gif.gif)
 
 
 # 2D Zombie Shooter (C++ / SFML)
