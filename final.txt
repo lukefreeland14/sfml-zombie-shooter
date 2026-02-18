@@ -1,0 +1,31 @@
+TITLE: 
+Luke Freeland, CSCI 200 – Section B
+Project Title: Archer Hero: Zombie Wave Survival
+
+Problem Description:
+The project is a 2D shooter game from above where the player is an archer who must survive zombie waves. Each round produces more enemies, so it becomes increasingly difficult as the game progresses. The player can fire arrows at the approaching zombies and loses if touched by the zombie. The game is played in a small window, and every turn is visually marked on the screen. This was done as a piece of work inspired by mobile game archero, it's the same concept but I created my own variation.
+
+PROGRAM DOCUMENTATION:
+To build the game, link all the.cpp files with a C++17-aware compiler and link against SFML graphics, window, and system libraries. Example build command:
+Make
+game.exe
+
+Make sure Assets/Archer.png, the zombie sprite, and Assets/arial.ttf are in the correct directories.
+In order to make the program more expandable, future developers would be able to add various types of enemies, power-ups, score, or high scores that carry over. The project was initially going to have multiple levels, but due to simplicity and polish, the scope was limited to a single arena-style map. Additions such as spawn logic and wave delays were added to improve gameplay stability and equity.
+
+CLASS DESCRIPTION:
+The Enemy class contains the texture, sprite, health, behavior when moving, and interaction with player for one zombie. Update position method, collision check method, and method to take damage are included here. This class provided modular control of each individual enemy instance as well as eliminated complexity in handling wave spawning and taking damage.
+A std::vector was used to store dynamically allocated arrows and enemies. std::vector was used since it supports dynamic resizing and efficient iteration, which was ideal for continuously adding and removing arrows and enemies during the game. It allowed for easy iteration and safe removal in the update loop.
+
+FILE I/O:
+I used FILE I/O to save and track the high score of the game. I don't think this was necessary but I do think it is a nice addition made in. That way anyone can try to beat the high score which makes people want to play the game again and again.
+
+PROJECT MODIFICATIONS:
+Enemies were initially spawned at arbitrary locations across the entire screen. This led to unbalanced occurrences where zombies were spawned right over the player. To correct this, a distance from the player was mandated as a spawn constraint. A timer-based round change system was introduced so that groups of enemies were not spawned instantaneously. Bug fixing and smoothening were prioritized over implementing additional features like choice of level or power-ups.
+
+REFLECTIONS:
+What I actually learned a great deal about with this project, though, is how to deal with bugs that were really difficult to fix. Attempting not to get frustrated repeating the same error over and over again is mentally challenging. For a whole while, I was stuck for hours on end with a bug caused by spawnWave function. I had no idea and I finally snapped under and went to office hours. Screw you to Max for assisting me in determining what was wrong and I also learned a great deal about the process of debugging from him. Generally, this project was difficult, but it paid off in the end when I had a product that worked and I also learned a great deal creating this game. I hope you enjoy whoever plays it, my personal best is round 42 if you have to try to beat it.
+
+
+
+

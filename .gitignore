@@ -1,0 +1,19 @@
+# Build outputs
+build/
+Debug/
+Release/
+x64/
+x86/
+
+# Object files
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
